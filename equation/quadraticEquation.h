@@ -9,7 +9,7 @@ extern int solveQuadraticEquation( double a , double b , double c) ;
         double x1 = getQuadraticEquationSolution(1) ;
         double x2 = getQuadraticEquationSolution(2) ;
    }else {
-        //no solution
+        //no solution 
    }
 */
 extern double getQuadraticEquationSolution(int ) ;
