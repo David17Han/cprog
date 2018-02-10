@@ -8,6 +8,7 @@ extern int solveQuadraticEquation( double a , double b , double c) ;
    if ( soln == 2 ) {
         double x1 =  getQuadraticEquationSolution(1) ;
         double x2 =  getQuadraticEquationSolution(2) ;
+		//output x1 x2
    }else {
         //no solution 
    }
