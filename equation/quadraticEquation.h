@@ -13,4 +13,4 @@ extern int solveQuadraticEquation( double a , double b , double c) ;
         //no solution
    }
 */
-extern double getQuadraticEquationSolution() ;
+extern double getQuadraticEquationSolution(int ) ;
