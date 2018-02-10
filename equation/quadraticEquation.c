@@ -49,22 +49,4 @@ double getQuadraticEquationSolution(int solNo)
     return x ;
 }
 
-/*  //main for test
-int main()
-{
-    double a,b,c ;
-    int solNum ;
-    scanf("%lf%lf%lf", &a, &b ,&c ) ;
-    solNum = solveQuadraticEquation( a ,b ,c) ;
-    if( solNum == 2 ) {
-        double x1 , x2 ;
-        x1 = getQuadraticEquationSolution(1) ;
-        x2 = getQuadraticEquationSolution(2) ;
-        printf("Solution of (%.2f,%.2f,%.2f) is %.2f,%.2f\n" , a,b,c,x1,x2) ;
-    }else {
-        printf("Solution of Quadratic equation(%.2f,%.2f,%.2f) has no solution \n" , a,b,c) ;
-    }
-    printf("end of main\n");
-    return 0;
-}
-*/
+
