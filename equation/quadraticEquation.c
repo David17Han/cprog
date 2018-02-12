@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <math.h>
 
-double x ;
 double x1 , x2 ;//solution of equation
 int solutionNum ;
 
