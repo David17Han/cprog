@@ -1,0 +1,28 @@
+题目：
+这是一个计算统计量的编程题。可以训练c语言指针的使用、统计量的计算、excel计算统计量的方法。
+编程任务：
+  1 从 https://github.com/David17Han/cprog/tree/master/statistics 获取 inputSample.c和inputSample.h和statistics.xlsx
+  2 在要编写的源文件里包含 inputSample.h (#include "inputSample.h")
+  3 调用 int sampleData( int *inputArray ,  int n  ) 获取样本数据，该函数的使用方法在inputSample.h里有说明
+  4 自己完成编码函数： double calculateStatistic( int* p , int n , double * median , double *var ) ; 计算样本的平均值，
+    中位数和样本方差。该函数的参数含义如下：
+      /* p: array that store sample data
+      /* n: the number of sample data
+      /* median: pointer to bring back the  median （中位数）
+      /* var : pointer to bring back variance
+      /* return value: average value */
+   5 平均值没有什么说的，中位数是指从小到大排在中间的那个（奇数个样本）或中间两个的和的一半（偶数个样本）。
+     在编程里可使用前面学过的排序算法。
+   6 方差，其实在统计学里有两个概念：样本方差和总体方差，样本方差是每个样本值和均值的平方和除以 样本总数减一。
+     而总体方差是 每个测试值和均值的平方和除以样本总数。样本方差一个是实验值，总体方差是理论值。 
+     在statistics.xlsx有比较详细的说明。
+
+测试：
+   1 由于计算量较大，可以使用excel来验证编程结果。
+   2 在sampleData这个函数里会把采样到的数据写到 e:\sample.txt 这个文件里。把这些数据copy到一个excel文件的单元格里，
+     然后找一个空的单元格，敲个=号，然后键入公式：Average（求平均），median（求中位数），Var（求方差），函数的参数是
+     起始和结束单元格的名字，比如A1表示A列1行单元格，A15表示A列15行单元格，在某单元格里写入 =median(A1:A15) 这个字串
+     然后敲个回车，就会把A1至A15的数据中位数计算出来显示在该单元格里。你可以参考statistics.xlsx的example页，该文件后
+     面几页是指导怎么寻找求中位数，样本方差和总体方差的公式，还有几页是对有些概念的解释。
+   3 运行程序结束后先别关，把sample.txt的数据copy到excel文件里计算平均、中位数和样本方差，然后与你程序里的计算结果对比
+     以确定编程是否正确。
