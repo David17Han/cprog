@@ -8,7 +8,7 @@
    median: pointer to bring back the  median
    var : pointer to bring back variance
    return value: average value */
-extern double calculateStatistic( int* p , int n , double * median , double *var ) ;
+//extern double calculateStatistic( int* p , int n , double * median , double *var ) ;
 
 
 int sampleData( int *inputArray ,  int n  )
