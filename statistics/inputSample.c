@@ -4,10 +4,10 @@
 #include "inputSample.h"
 
 /* p: array that store sample data
-/* n: the number of sample data
-/* median: pointer to bring back the  median （中位数）
-/* var : pointer to bring back variance
-/* return value: average value */
+   n: the number of sample data
+   median: pointer to bring back the  median （中位数）
+   var : pointer to bring back variance
+   return value: average value */
 extern double calculateStatistic( int* p , int n , double * median , double *var ) ;
 
 
@@ -33,22 +33,4 @@ int sampleData( int *inputArray ,  int n  )
 }
 
 
-int main0()//can change to main to use this test routine.
-{
-    int inputA[100] ;
-    int i = 0 , n ;
-    double average , median , var ;
-    printf("Please enter the sample number to input (1~100):\n");
-    scanf("%d", &n ) ;
-    sampleData( inputA , n ) ;
-    do {
-        printf("%d " , inputA[i]) ;
-        i ++  ;
-        if( i %20 == 0  )
-            printf("\n") ;
-    }while( i <n ) ;
-    printf("\n") ;
-    //average = calculateStatistic( inputA ,  n , & median , & var ) ;
-    //printf("av=%f, med=%f ,var=%f\n" , average , median , var )  ;
-    return 0;
-}
+
