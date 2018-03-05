@@ -33,7 +33,7 @@ int sampleData( int *inputArray ,  int n  )
 }
 
 
-int main0()
+int main0()//can change to main to use this test routine.
 {
     int inputA[100] ;
     int i = 0 , n ;
