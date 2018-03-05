@@ -5,7 +5,7 @@
 
 /* p: array that store sample data
    n: the number of sample data
-   median: pointer to bring back the  median £¨ÖÐÎ»Êý£©
+   median: pointer to bring back the  median
    var : pointer to bring back variance
    return value: average value */
 extern double calculateStatistic( int* p , int n , double * median , double *var ) ;

@@ -5,5 +5,5 @@
 #define FAIL -1
 /* inputArray : the array to bring back the sample data
    n : the number of sample data to get
-  return value : SUCCESS means and FAIL means failing  */
+  return value : SUCCESS means successful and FAIL means failing  */
 extern int sampleData( int *inputArray ,  int n  ) ;
