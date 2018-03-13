@@ -37,7 +37,7 @@ void selectionAsendSort( int data[] , int n )
 
 void bubbleAsendSort( int data[] , int n )
 {
-    int i , j  ;
+    int i , j i ;
     int tmp;
     for( i = 0 ; i <= n-2 ; i ++ ) {
         for( j = 1 ;j <= n-i ; j ++ ) {
